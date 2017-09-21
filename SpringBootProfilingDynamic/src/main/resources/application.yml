@@ -1,0 +1,22 @@
+spring:
+  profiles.active: production
+  #profiles.active=production
+#spring.profiles.active=development
+---
+spring:
+  profiles: production
+spring.datasource:
+  driverClassName: com.mysql.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/test
+  username: root
+  password: root
+ 
+---
+spring:
+  profiles: development
+
+spring.datasource:
+  driverClassName: com.mysql.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/test1
+  username: root
+  password: root
